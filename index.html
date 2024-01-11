@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylish.css">
+    
+</head>
+<body>
+    <div id="nav">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.GoEyN2yx7ARkwoVNtDeK8wHaHa?rs=1&pid=ImgDetMain" alt="">
+    <h4 id="aboutUsLink" onclick="scrollToAboutUs()">ABOUT US</h4>
+    <h4 id="activitiesLink" onclick="scrollToActivities()">ACTIVITIES</h4>
+    <h4 id="signupLink" onclick="scrollToSignUp()">SIGN UP</h4>
+    </div>
+    <video src="https://sidcupfamilygolf.com/wp-content/uploads/2023/08/SFG-Website-Header-Video-0823.mp4" autoplay muted loop ></video>
+    <div id="main">
+        <div id="page1">
+            <h1>PLAY.LEARN.EAT</h1>
+            <h2>WELCOME TO THE BOWLING ALLEY!</h2>
+            <p>Experience the thrill of victory, the agony of defeat, and the joy of a well-timed spare at our bowling alley, where every game is a masterpiece waiting to unfold.</p>
+        </div>
+        <div id="page2">
+        <marquee behavior="" direction="" scrolldelay="3">BOWLING GAMES ENTERTAINMENT CAFE EVENTS</marquee>   
+        <div id="about_us">
+            <!--<img src="https://www.pixelstalk.net/wp-content/uploads/2016/04/Free-golf-backgrounds-photos-pics.jpg" alt="">-->
+            <div id="about_us_text">
+            <h3>ABOUT US</h3>
+            <p>Welcome to our vibrant bowling alley, a haven for bowling enthusiasts seeking thrills and camaraderie. We offer a unique blend of traditional bowling with modern amenities, ensuring an unforgettable experience. From our state-of-the-art lanes to our friendly staff and lively atmosphere, we strive to make every visit enjoyable and memorable. Join us and discover why we're the perfect spot for a fun-filled bowling adventure!</p>
+            </div>
+            <!--<img src="https://th.bing.com/th/id/R.4435d796dd84b482ec166b5452b21886?rik=cIXcA9XEtINJDw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fpVnGEwZ.jpg&ehk=0HmgzAyrKuOB%2bwMYXTOY4yQXVxsPYubbDQiTX2TnUN0%3d&risl=&pid=ImgRaw&r=0" alt="">-->
+        </div>
+        <div id="card_container">
+            <div class="card" id="card1">
+                <div class="overlay">
+                    <h3>BOWLING GAMES</h3>
+                    <p>Enjoy the excitement of knocking down pins, or try your hand at our unique bowling games. Whether you're a seasoned bowler or a novice, our alley offers a fun and competitive environment.</p>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div class="overlay">
+                    <h3>LEARN</h3>
+                    <p>Master the art of bowling at our alley. Our dedicated instructors guide you through proper form, technique, and strategy. From novices to pros, we welcome everyone to learn and refine their skills.</p>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="overlay">
+                    <h3>GOLF LESSONS</h3>
+                    <p>Indulge in culinary delight at our bowling alley's cozy cafe. Offering a range of delectable dishes from hearty breakfast options to mouthwatering desserts, our cafe serves as a perfect retreat between bowling games. </p>
+                </div>
+            </div>
+        </div>
+        <div id="green_box" class="green_box">
+            <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+            <h4>SIGN UP AND GET SPECIAL OFFERS STRAIGHT TO YOUR INBOX</h4>
+            <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="">
+        </div>
+        </div>
+        <div id="page3">
+
+        </div>
+    </div>
+    <script>
+        function scrollToAboutUs() {
+            var aboutUsDiv = document.getElementById("page2");
+            aboutUsDiv.scrollIntoView();
+        }
+        function scrollToActivities() {
+            var activitiesDiv = document.getElementById("card_container");
+            activitiesDiv.scrollIntoView();
+        }
+        function scrollToSignUp() {
+            var SignUpDiv = document.getElementById("green_box");
+            SignUpDiv.scrollIntoView();
+        }
+        document.getElementById('green_box').addEventListener('click', function() {
+   window.location.href = 'login.html';
+ });
+    </script>
+</body>
+</html>
